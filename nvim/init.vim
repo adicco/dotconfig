@@ -13,6 +13,7 @@ Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+set number
 
 " Theme
 syntax enable
