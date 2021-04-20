@@ -14,6 +14,8 @@ call plug#end()
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 set number
+set relativenumber
+set rnu
 
 " Theme
 syntax enable
@@ -38,6 +40,9 @@ nnoremap <leader>cs :let @/=""<CR>
 nnoremap <leader>sf :w!<CR>
 nnoremap <leader>o o<Esc>k
 nnoremap <leader>O O<Esc>j
+nnoremap <leader>ve :tabedit ~/.config/nvim/init.vim<CR>
+nnoremap <leader>re :so %<CR>
+nnoremap <leader>q :q!<CR>
 
 " Window movement
 noremap <C-H> <C-w>h
