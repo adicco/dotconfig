@@ -75,7 +75,7 @@ bindsym $mod+Shift+F2 exec google-chrome-beta --profile-directory="Profile 1"
 bindsym $mod+Mod5+F2 exec google-chrome-beta --profile-directory="Profile 2"
 bindsym $mod+Ctrl+F2 exec google-chrome-beta --profile-directory="Profile 3"
 # bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec ranger
+bindsym $mod+F3 exec kitty sh -c "ranger"
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec kitty sh -c 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom

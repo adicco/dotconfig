@@ -32,6 +32,12 @@ nnoremap <C-f> :FZF<CR>
 nnoremap <leader>f :GFiles<CR>
 nnoremap <C-g> :Ag<CR>
 
+" Other helpful shortcuts (clear highlight)
+nnoremap <leader>cs :let @/=""<CR>
+nnoremap <leader>sf :w!<CR>
+nnoremap <leader>o o<Esc>k
+nnoremap <leader>O O<Esc>k
+
 " Window movement
 noremap <C-H> <C-w>h
 noremap <C-J> <C-w>j
