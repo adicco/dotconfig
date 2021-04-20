@@ -8,6 +8,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'habamax/vim-asciidoctor'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'connorholyday/vim-snazzy'
 call plug#end()
