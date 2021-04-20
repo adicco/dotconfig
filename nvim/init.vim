@@ -36,7 +36,7 @@ nnoremap <C-g> :Ag<CR>
 nnoremap <leader>cs :let @/=""<CR>
 nnoremap <leader>sf :w!<CR>
 nnoremap <leader>o o<Esc>k
-nnoremap <leader>O O<Esc>k
+nnoremap <leader>O O<Esc>j
 
 " Window movement
 noremap <C-H> <C-w>h
