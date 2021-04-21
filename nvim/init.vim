@@ -8,11 +8,15 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'habamax/vim-asciidoctor'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+set number
+set relativenumber
+set rnu
 
 " Theme
 syntax enable
@@ -31,6 +35,15 @@ let mapleader = " "
 nnoremap <C-f> :FZF<CR>
 nnoremap <leader>f :GFiles<CR>
 nnoremap <C-g> :Ag<CR>
+
+" Other helpful shortcuts (clear highlight)
+nnoremap <leader>cs :let @/=""<CR>
+nnoremap <leader>sf :w!<CR>
+nnoremap <leader>o o<Esc>k
+nnoremap <leader>O O<Esc>j
+nnoremap <leader>ve :tabedit ~/.config/nvim/init.vim<CR>
+nnoremap <leader>re :so %<CR>
+nnoremap <leader>q :q!<CR>
 
 " Window movement
 noremap <C-H> <C-w>h
