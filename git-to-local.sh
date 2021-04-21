@@ -4,5 +4,5 @@ for d in */ ; do
 done
 
 cp i3-custom-lock "${HOME}/.config/"
-cp bg.*png "${HOME}/.config/"
+cp bg*png "${HOME}/.config/"
 
