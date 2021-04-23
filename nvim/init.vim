@@ -8,7 +8,7 @@ Plug 'habamax/vim-asciidoctor'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
-" Plug 'connorholyday/vim-snazzy'
+Plug 'connorholyday/vim-snazzy'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -31,9 +31,9 @@ if (has("termguicolors"))
 endif
 " set background=dark
 colorscheme gruvbox
-" let g:lightline = {
-" \ 'colorscheme': 'gruvbox',
-" \ }
+let g:lightline = {
+\ 'colorscheme': 'snazzy',
+\ }
 
 " Fix kitty
 let &t_ut=''
@@ -57,11 +57,14 @@ nnoremap <leader>q :q!<CR>
 
 " Find files using Telescope command-line sugar.
 nnoremap <C-f> <cmd>Telescope find_files<cr>
+nnoremap <leader>f <cmd>Telescope grep_string<cr>
 nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
 " nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>t <cmd>Telescope file_browser<cr>
 
+" Change current workdir; <leader>cd changes only current window
+" and ca for 'change all'
 nnoremap <leader>cd :lcd %:p:h<cr>
 nnoremap <leader>ca :cd %:p:h<cr>
 
