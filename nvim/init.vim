@@ -1,7 +1,10 @@
 call plug#begin('~/.vim/plugged')
-Plug 'yuezk/vim-js'
+" Plug 'yuezk/vim-js'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'othree/yajs.vim'
+Plug 'peitalin/vim-jsx-typescript'
+" Plug 'othree/yajs.vim'
 Plug 'tpope/vim-commentary'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'habamax/vim-asciidoctor'
