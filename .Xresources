@@ -1,6 +1,14 @@
 ! Base16 Gruvbox dark, hard
 ! Scheme: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+ 
 #define base00 #1d2021
 #define base01 #3c3836
 #define base02 #504945
