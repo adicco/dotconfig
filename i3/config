@@ -7,6 +7,8 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+set $browser google-chrome-beta
+
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -70,10 +72,10 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 
 # Start Applications
 bindsym $mod+Ctrl+b exec kitty sh -c 'pacui'
-bindsym $mod+F2 exec google-chrome-beta --profile-directory=Default
-bindsym $mod+Shift+F2 exec google-chrome-beta --profile-directory="Profile 1"
-bindsym $mod+Mod5+F2 exec google-chrome-beta --profile-directory="Profile 2"
-bindsym $mod+Ctrl+F2 exec google-chrome-beta --profile-directory="Profile 3"
+bindsym $mod+F2 exec $browser --profile-directory=Default
+bindsym $mod+Shift+F2 exec $browser --profile-directory="Profile 1"
+bindsym $mod+Mod5+F2 exec $browser --profile-directory="Profile 2"
+bindsym $mod+Ctrl+F2 exec $browser --profile-directory="Profile 3"
 bindsym $mod+F3 exec kitty sh -c "ranger"
 # bindsym $mod+t exec --no-startup-id pkill picom
 # bindsym $mod+Ctrl+t exec --no-startup-id picom -b
